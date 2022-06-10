@@ -14,7 +14,9 @@ def transform_data(time):
 
 
 def time_12(list_time):
-    if list_time[0]=="13":
+    if list_time[0]== "12":
+        list_time.append("PM")
+    elif list_time[0]=="13":
         list_time[0]="1"
         list_time.append("PM")
     elif list_time[0]=="14":
@@ -22,7 +24,7 @@ def time_12(list_time):
         list_time.append("PM")
     elif list_time[0]=="15":
         list_time[0]="3"
-        list_time.append("PM")
+        list_time.append("PM")  
     elif list_time[0]=="16":
         list_time[0]="4"
         list_time.append("PM")
