@@ -43,3 +43,4 @@ try:
     Suisse(list,max,min)
 except:
     print("erreur")
+
