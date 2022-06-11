@@ -50,7 +50,13 @@ def time_12(list_time):
         list_time[0]="11"
         list_time.append("PM")
     elif list_time[0]=="24":
-        list_time[0]="00"
+        list_time[0]="12"
+        list_time.append("AM")
+    elif list_time[0]=="0":
+        list_time[0]="12"
+        list_time.append("AM")
+    elif list_time[0]=="00":
+        list_time[0]="12"
         list_time.append("AM")
     else:
         list_time.append("AM")
@@ -61,7 +67,11 @@ def new_time(time):
     new_time="".join(time)
     print(new_time)
 
-time=input_data()
-list_time=transform_data(time)
-list_time_2=time_12(list_time)
-new_time(list_time_2)
+
+try:
+    time=input_data()
+    list_time=transform_data(time)
+    list_time_2=time_12(list_time)
+    new_time(list_time_2)
+except:
+    print("erreur")
