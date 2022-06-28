@@ -56,3 +56,4 @@ try:
 except:
     print("erreur")
 
+# meme chose que pour le 24 voir le shicth case en python 

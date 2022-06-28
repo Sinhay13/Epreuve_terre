@@ -4,7 +4,7 @@ import sys
 alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
             "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
-L = str(sys.argv[-1])
+L = str(sys.argv[-1]) # metre des non de para plus precis 
 
 
 def chercher(a, L):

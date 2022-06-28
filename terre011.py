@@ -75,3 +75,6 @@ try:
     new_time(list_time_2)
 except:
     print("erreur")
+
+
+# refaire avec la difference de 12 
